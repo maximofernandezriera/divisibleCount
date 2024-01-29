@@ -1,6 +1,14 @@
 # divisibleCount
 https://www.codewars.com/kata/55a5c82cd8e9baa49000004c/train/java
 
+# Análisis
+
+1. Identificar el Primer y último número divisible: Encontrar el primer número mayor o igual a x y el último número menor o igual a y que sean divisibles por k. Esto se puede hacer usando operaciones de división y módulo.
+
+2. Calcular la cantidad de Números Divisibles: Una vez identificados estos números, se calcula cuántos números divisibles hay entre ellos. Esto se puede hacer restando los cocientes de la división de y y x por k, y luego sumando 1 al resultado.
+
+3. Manejar casos límite: Es importante considerar casos donde x o y sean ellos mismos divisibles por k.
+
 ## Consideración importante 1
 La primera parte de la línea `long firstDivisible = x % k == 0 ? x : x + (k - x % k);` es una comprobación para ver si el número `x` ya es divisible por `k`. 
 
